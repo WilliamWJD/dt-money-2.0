@@ -1,4 +1,12 @@
 import * as Dialog from '@radix-ui/react-dialog'
+import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
+import * as z from 'zod'
+import { Controller, useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useContext } from 'react'
+import { TransactionsContext } from '../../context/TransactionsContext'
+import { toast } from 'react-toastify'
+
 import {
   CloseButton,
   Content,
@@ -6,12 +14,6 @@ import {
   TransactionType,
   TypeButton,
 } from './styles'
-import { ArrowCircleDown, ArrowCircleUp, X } from 'phosphor-react'
-import * as z from 'zod'
-import { Controller, useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { useContext } from 'react'
-import { TransactionsContext } from '../../context/TransactionsContext'
 
 const newTrasanctionFormSchema = z.object({
   description: z.string(),
@@ -44,6 +46,8 @@ export function NewTransactionModal() {
       category,
       type,
     })
+
+    toast.success('Transação salva com sucesso! ✌')
 
     reset()
   }

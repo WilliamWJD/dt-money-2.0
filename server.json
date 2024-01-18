@@ -15,6 +15,14 @@
       "price": 750,
       "createdAt": "2024-01-18T12:18:27.192Z",
       "id": 2
+    },
+    {
+      "description": "Formatação de computador",
+      "type": "income",
+      "category": "Freelancer",
+      "price": 135,
+      "createdAt": "2024-01-18T12:21:53.183Z",
+      "id": 3
     }
   ]
 }
