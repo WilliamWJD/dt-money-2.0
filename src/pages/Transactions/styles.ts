@@ -39,3 +39,10 @@ export const PriceHighlight = styled.span<PriceHighlightProps>`
       ? props.theme['green-300']
       : props.theme['red-300']};
 `
+
+export const ButtonRemove = styled.div`
+  svg {
+    color: ${(props) => props.theme['red-300']};
+    cursor: pointer;
+  }
+`

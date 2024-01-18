@@ -3,15 +3,21 @@ import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { SearchForm } from './components/SearchForm'
 import {
+  ButtonRemove,
   PriceHighlight,
   TransactionsContainer,
   TransactionsTable,
 } from './styles'
 import { TransactionsContext } from '../../context/TransactionsContext'
 import { dateFormatter, priceFormatter } from '../../utils/formatter'
+import { Trash } from 'phosphor-react'
 
 export function Transactions() {
-  const { transactions } = useContext(TransactionsContext)
+  const { transactions, removeTransaction } = useContext(TransactionsContext)
+
+  async function handleRemoveTransaction(id: number) {
+    removeTransaction(id)
+  }
 
   return (
     <div>
@@ -34,6 +40,13 @@ export function Transactions() {
                 </td>
                 <td>{transaction.category}</td>
                 <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
+                <td>
+                  <ButtonRemove
+                    onClick={() => handleRemoveTransaction(transaction.id)}
+                  >
+                    <Trash size={24} />
+                  </ButtonRemove>
+                </td>
               </tr>
             ))}
           </tbody>
