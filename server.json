@@ -1,28 +1,76 @@
 {
-    "transactions":[
-        {
-            "id": 1,
-            "description": "Desenvolvimento de site",
-            "type": "income",
-            "category": "Vendas",
-            "price": 14000,
-            "createdAt": "2024-01-17T10:54:36.418Z"
-        },
-        {
-            "id": 2,
-            "description": "Lanche",
-            "type": "outcome",
-            "category": "Alimentação",
-            "price": 50,
-            "createdAt": "2024-01-17T09:54:36.418Z"
-        },
-        {
-            "id": 3,
-            "description": "Conta de energia",
-            "type": "outcome",
-            "category": "Casa",
-            "price": 150,
-            "createdAt": "2024-01-17T09:54:36.418Z"
-        }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Vendas",
+      "price": 14000,
+      "createdAt": "2024-01-17T10:54:36.418Z"
+    },
+    {
+      "id": 2,
+      "description": "Lanche",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2024-01-17T09:54:36.418Z"
+    },
+    {
+      "id": 3,
+      "description": "Conta de energia",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 150,
+      "createdAt": "2024-01-17T09:54:36.418Z"
+    },
+    {
+      "description": "Parcela da faculdade",
+      "type": "outcome",
+      "category": "Estudos",
+      "price": 600,
+      "createdAt": "2024-01-18T11:46:24.071Z",
+      "id": 4
+    },
+    {
+      "description": "Planilha automatizada",
+      "type": "income",
+      "category": "Freelancer",
+      "price": 750,
+      "createdAt": "2024-01-18T11:47:06.129Z",
+      "id": 5
+    },
+    {
+      "description": "Padaria",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 12,
+      "createdAt": "2024-01-18T11:49:03.409Z",
+      "id": 6
+    },
+    {
+      "description": "Formatação de computador",
+      "type": "income",
+      "category": "Freelancer",
+      "price": 130,
+      "createdAt": "2024-01-18T11:49:48.561Z",
+      "id": 7
+    },
+    {
+      "description": "Ifood",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 35,
+      "createdAt": "2024-01-18T11:50:11.104Z",
+      "id": 8
+    },
+    {
+      "description": "Conta de Internet",
+      "type": "outcome",
+      "category": "Casa",
+      "price": 100,
+      "createdAt": "2024-01-18T12:02:57.638Z",
+      "id": 9
+    }
+  ]
 }
