@@ -1,4 +1,3 @@
-import { useContext } from 'react'
 import { Header } from '../../components/Header'
 import { Summary } from '../../components/Summary'
 import { SearchForm } from './components/SearchForm'
@@ -11,9 +10,18 @@ import {
 import { TransactionsContext } from '../../context/TransactionsContext'
 import { dateFormatter, priceFormatter } from '../../utils/formatter'
 import { Trash } from 'phosphor-react'
+import { useContextSelector } from 'use-context-selector'
 
 export function Transactions() {
-  const { transactions, removeTransaction } = useContext(TransactionsContext)
+  const { transactions, removeTransaction } = useContextSelector(
+    TransactionsContext,
+    ({ transactions, removeTransaction }) => {
+      return {
+        transactions,
+        removeTransaction,
+      }
+    },
+  )
 
   async function handleRemoveTransaction(id: number) {
     removeTransaction(id)
