@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+<h1 align="center">DT-MONEY 2.0</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4 align="center">
+  ☕ Gerencie suas finanças
+</h4>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💻 Projeto
+Projeto desenvolvido durante o treinamento de React (ignite) da plataforma de ensino Rocketseat.
 
-## Expanding the ESLint configuration
+<img src="./assets/dt-moneyTela1.png" width="1200px"/>
+<img src="./assets/dt-moneyTela2.png" width="1200px"/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## :rocket: Tecnologias
 
-- Configure the top-level `parserOptions` property like this:
+Tecnologias utilizadas no projeto:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React
+- JavaScript
+- Html
+- Css
+- Styled Components
+- Context
+- Reducer
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🤔 Como contribuir
+
+- Faça um fork desse repositório;
+- Cria uma branch com a sua feature: `git checkout -b minha-feature`;
+- Faça commit das suas alterações: `git commit -m 'feat: Minha nova feature'`;
+- Faça push para a sua branch: `git push origin minha-feature`.
+
+Depois que o merge da sua pull request for feito, você pode deletar a sua branch.
+
+
+
+---
+
+Desenvolvido por [William José Dias!](https://github.com/WilliamWJD)
